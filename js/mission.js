@@ -287,5 +287,7 @@ function addAttentionCard() {
 }
 
 function disableAttention() {
+    let e = document.getElementById("attentionArea");
+    e.classList.remove("boarder");
     attentionArea.innerHTML = '';
 }
