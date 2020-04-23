@@ -1,0 +1,338 @@
+[
+    {
+        "name": "Agent Blaise",
+        "unique": true,
+        "collection": "Bespin Gambit",
+        "fid": 1
+    },
+    {
+        "name": "AT-ST",
+        "unique": false,
+        "collection": "Core",
+        "fid": 2
+    },
+    {
+        "name": "Bantha Rider",
+        "unique": false,
+        "collection": "Bantha Rider",
+        "fid": 3
+    },
+    {
+        "name": "Boba Fett",
+        "unique": true,
+        "collection": "Twin Shadows",
+        "fid": 4
+    },
+    {
+        "name": "Bossk",
+        "unique": true,
+        "collection": "Bespoin Gambit",
+        "fid": 5
+    },
+    {
+        "name": "Darth Vader",
+        "unique": true,
+        "collection": "Core",
+        "fid": 6
+    },
+    {
+        "name": "Dengar",
+        "unique": true,
+        "collection": "Hoth",
+        "fid": 7
+    },
+    {
+        "name": "E-Web Engineer",
+        "unique": false,
+        "collection": "Core",
+        "fid": 8
+    },
+    {
+        "name": "General Sorin",
+        "unique": true,
+        "collection": "Hoth",
+        "fid": 9
+    },
+    {
+        "name": "General Weiss",
+        "unique": true,
+        "collection": "Core",
+        "fid": 10
+    },
+    {
+        "name": "Greedo",
+        "unique": true,
+        "collection": "Greedo",
+        "fid": 11
+    },
+    {
+        "name": "Heavy Stormtroopers",
+        "unique": false,
+        "collection": "Twin Shadows",
+        "fid": 12
+    },
+    {
+        "name": "Hired Gun",
+        "unique": false,
+        "collection": "Hired Gun",
+        "fid": 13
+    },
+    {
+        "name": "HK Assassin Droid",
+        "unique": false,
+        "collection": "Hoth",
+        "fid": 14
+    },
+    {
+        "name": "IG-88",
+        "unique": true,
+        "collection": "Core",
+        "fid": 15
+    },
+    {
+        "name": "Imperial Officer",
+        "unique": false,
+        "collection": "Core",
+        "fid": 16
+    },
+    {
+        "name": "Junk Droid",
+        "unique": false,
+        "collection": "Bespoin Gambit",
+        "fid": 17
+    },
+    {
+        "name": "ISB Infiltrator",
+        "unique": false,
+        "collection": "ISB Infiltrator",
+        "fid": 18
+    },
+    {
+        "name": "Kayn Somos",
+        "unique": true,
+        "collection": "Twins Shadows",
+        "fid": 19
+    },
+    {
+        "name": "Nexus",
+        "unique": false,
+        "collection": "Core",
+        "fid": 20
+    },
+    {
+        "name": "Probe Droid",
+        "unique": false,
+        "collection": "Core",
+        "fid": 21
+    },
+    {
+        "name": "Royal Guard Champion",
+        "unique": true,
+        "collection": "Core",
+        "fid": 22
+    },
+    {
+        "name": "Royal Guard",
+        "unique": false,
+        "collection": "Core",
+        "fid": 23
+    },
+    {
+        "name": "SC2-M Replusor Tank",
+        "unique": false,
+        "collection": "Hoth",
+        "fid": 24
+    },
+    {
+        "name": "Stormtrooper",
+        "unique": false,
+        "collection": "Core",
+        "fid": 25
+    },
+    {
+        "name": "Trandoshan Hunter",
+        "unique": false,
+        "collection": "Core",
+        "fid": 26
+    },
+    {
+        "name": "Tusken Raider",
+        "unique": false,
+        "collection": "",
+        "fid": 27
+    },
+    {
+        "name": "Ugnaught Tinkerer",
+        "unique": false,
+        "collection": "Bespoin Gambit",
+        "fid": 28
+    },
+    {
+        "name": "Wampa",
+        "unique": false,
+        "collection": "Hoth",
+        "fid": 29
+    },
+    {
+        "name": "Wing Guard",
+        "unique": false,
+        "collection": "Bespin Gambit",
+        "fid": 30
+    },
+    {
+        "name": "Captain Terro",
+        "unique": true,
+        "collection": "Jabba",
+        "fid": 31
+    },
+    {
+        "name": "Dewbacker Rider",
+        "unique": false,
+        "collection": "Captain Terro",
+        "fid": 32
+    },
+    {
+        "name": "Gamorrean Guard",
+        "unique": false,
+        "collection": "Jabba",
+        "fid": 33
+    },
+    {
+        "name": "Jabba the Hutt",
+        "unique": true,
+        "collection": "Jabba",
+        "fid": 34
+    },
+    {
+        "name": "Jet Trooper",
+        "unique": false,
+        "collection": "Jabba",
+        "fid": 35
+    },
+    {
+        "name": "Rancor",
+        "unique": false,
+        "collection": "Jabba",
+        "fid": 36
+    },
+    {
+        "name": "Salacious B. Crumb",
+        "unique": true,
+        "collection": "Jabba",
+        "fid": 37
+    },
+    {
+        "name": "Weequay Pirate",
+        "unique": false,
+        "collection": "Jabba",
+        "fid": 38
+    },
+    {
+        "name": "AT-DP",
+        "unique": false,
+        "collection": "Heart of the Empire",
+        "fid": 39
+    },
+    {
+        "name": "Emperor Palpatine",
+        "unique": true,
+        "collection": "Heart of the Empire",
+        "fid": 40
+    },
+    {
+        "name": "Riot Trooper",
+        "unique": false,
+        "collection": "Heart of the Empire",
+        "fid": 41
+    },
+    {
+        "name": "Sentry Droid",
+        "unique": false,
+        "collection": "Heart of the Empire",
+        "fid": 42
+    },
+    {
+        "name": "Maul",
+        "unique": true,
+        "collection": "Heart of the Empire",
+        "fid": 43
+    },
+    {
+        "name": "Clawdite Shapshifter",
+        "unique": false,
+        "collection": "Heart of the Empire",
+        "fid": 44
+    },
+    {
+        "name": "Clawdite Senator",
+        "unique": false,
+        "collection": "Heart of the Empire",
+        "fid": 45
+    },
+    {
+        "name": "Clawdite Streetrat",
+        "unique": false,
+        "collection": "Heart of the Empire",
+        "fid": 46
+    },
+    {
+        "name": "Clawdite Scout",
+        "unique": false,
+        "collection": "Heart of the Empire",
+        "fid": 47
+    },
+    {
+        "name": "Thrawn",
+        "unique": true,
+        "collection": "Lothal",
+        "fid": 48
+    },
+    {
+        "name": "Death Trooper",
+        "unique": false,
+        "collection": "Lothal",
+        "fid": 49
+    },
+    {
+        "name": "Loth Cat",
+        "unique": false,
+        "collection": "Lothal",
+        "fid": 50
+    },
+    {
+        "name": "Hondo Ohnaka",
+        "unique": true,
+        "collection": "Lothal",
+        "fid": 51
+    },
+    {
+        "name": "0-0-0",
+        "unique": true,
+        "collection": "BT-1 and 0-0-0",
+        "fid": 52
+    },
+    {
+        "name": "BT-1",
+        "unique": false,
+        "collection": "BT-1 and 0-0-0",
+        "fid": 53
+    },
+    {
+        "name": "Jawa Scavenger",
+        "unique": false,
+        "collection": "Jawa Scavenger",
+        "fid": 54
+    },
+    {
+        "name": "Snowtrooper",
+        "unique": false,
+        "collection": "Hoth",
+        "fid": 55
+    },
+    {
+        "name": "The Grand Inquisitor",
+        "unique": true,
+        "collection": "The Grand Inquisitor",
+        "fid": 56
+    }
+]
