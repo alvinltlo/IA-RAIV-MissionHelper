@@ -4,6 +4,7 @@ var missions = [];
 
 const mission_base_path = "images\\missions\\";
 const ai_base_path = "images\\ai\\";
+const attention_base_path = "images\\attenion\\";
 const ai_file_prefix = "Imperial AI - Single Cards - All Cards";
 
 const missionSearchSelect = document.getElementById("missionSearch");
@@ -91,7 +92,7 @@ function loadCollection(input) {
 
 function add() {
     var data = $('#aiSearch').select2('data');
-    console.log(data);
+
     let img = document.createElement("img");
     img.src = ai_base_path + ai_file_prefix + data[0].fid + ".jpg";
     img.classList.add("animated", "flipInY", "mx-auto", "d-block", "card");
@@ -138,6 +139,7 @@ function updateAICardDropDown() {
         data: data
     })
 
+    addBtn.disabled = false;
     aiSearchSelect.disabled = false;
     selectAICardLabel.innerText = "Select AI Card: (Avaliable AI Cards = " + all_ai_cards.length + ")";
 }
@@ -211,3 +213,79 @@ function getImagePath(mission, front) {
     }
 }
 
+function enableAttention() {
+    let e = document.getElementById("attentionArea");
+    e.classList.add("boarder");
+
+    let h5 = document.createElement("h5");
+    h5.innerHTML = "Minimum Hero XP";
+    let select = document.createElement("select");
+    select.classList.add("selectpicker");
+    select.id = "attentionDropDown";
+    select.onchange = function () { addAttentionCard(); };
+
+    let op0 = document.createElement("option");
+    op0.value = "0";
+    op0.textContent = "0";
+    let op1 = document.createElement("option");
+    op1.value = "1";
+    op1.textContent = "1+";
+    let op3 = document.createElement("option");
+    op3.value = "3";
+    op3.textContent = "3+";
+    let op6 = document.createElement("option");
+    op6.value = "6";
+    op6.textContent = "6+";
+    let op10 = document.createElement("option");
+    op10.value = "10";
+    op10.textContent = "10+";
+
+    select.appendChild(op0);
+    select.appendChild(op1);
+    select.appendChild(op3);
+    select.appendChild(op6);
+    select.appendChild(op10);
+
+    let div = document.createElement("div");
+    div.classList.add("d-flex");
+    div.style.marginTop = "10px"
+    div.id = "attentionCard"
+
+    attentionArea.appendChild(h5);
+    attentionArea.appendChild(select);
+    attentionArea.appendChild(div);
+}
+
+function addAttentionCard() {
+    attentionCard.innerHTML = '';
+    let img
+    switch ($("#attentionDropDown").val()) {
+        case "10":
+            console.log("test");
+            img = document.createElement("img");
+            img.src = "images\\attention\\Attention Card4.jpg"
+            img.classList.add("animated", "flipInY", "mx-auto", "d-block", "card");
+            attentionCard.appendChild(img);
+        case "6":
+            img = document.createElement("img");
+            img.src = "images\\attention\\Attention Card3.jpg"
+            img.classList.add("animated", "flipInY", "mx-auto", "d-block", "card");
+            attentionCard.appendChild(img);
+        case "3":
+            img = document.createElement("img");
+            img.src = "images\\attention\\Attention Card2.jpg"
+            img.classList.add("animated", "flipInY", "mx-auto", "d-block", "card");
+            attentionCard.appendChild(img);
+        case "1":
+            img = document.createElement("img");
+            img.src = "images\\attention\\Attention Card1.jpg"
+            img.classList.add("animated", "flipInY", "mx-auto", "d-block", "card");
+            attentionCard.appendChild(img);
+        default:
+    }
+
+}
+
+function disableAttention() {
+    attentionArea.innerHTML = '';
+}

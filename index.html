@@ -16,12 +16,25 @@
     <div id="title" class="d-flex flex-row justify-content-center my-2">
         <h4 class="animated zoomIn">Imperial Assault RAIV Mission Handler</h2>
     </div>
-    <div class="d-flex">
-        <button type="button" class="btn btn-dark btn-block btn-m m-1" id="build" onclick="loadAll()">Load
-            all Missions and AI Cards</button>
+    <div class="d-flex justify-content-around align-items-center">
+        <div class="d-flex">
+            <button type="button" class="btn btn-dark btn-block btn-m m-1" id="build" onclick="loadAll()">Load
+                all Missions and AI Cards</button>
+        </div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-dark active">
+                <input type="radio" name="enableAttention" id="enableAttentionCard" autocomplete="off"
+                    onchange="enableAttention()">
+                Enable Attention Card
+            </label>
+            <label class="btn btn-dark">
+                <input type="radio" name="disableAttention" id="disableAttentionCard" autocomplete="off" checked
+                    onchange="disableAttention()"> Disabled
+                Attention Card
+            </label>
+        </div>
     </div>
     <div class="d-flex flex-row justify-content-around m-2 p-2 flex-wrap boarder align-items-center">
-
 
         <!-- <div class="d-flex">
             <button type="button" class="btn btn-dark btn-block btn-m m-1" id="build" onclick="createCollection()"
@@ -35,23 +48,27 @@
             <div class="d-flex"><input type="file" id="loadDeckInput" onchange="loadCollection(this)">
             </div>
         </div> -->
+
         <div class="d-flex flex-column justify-content-around m-2 p-2 flex-wrap boarder align-items-center">
             <h5 id="selectMissionLabel">Select Mission</h5>
             <select id="missionSearch" style="width: 300px" disabled></select>
             <div class="d-flex m-3" id="missionCard"></div>
         </div>
 
+        <div class="d-flex flex-column align-items-center flex-wrap m-2 p-2" id="attentionArea">
+        </div>
+
         <div class="d-flex flex-column justify-content-around m-2 p-2 flex-wrap boarder align-items-center">
             <h5 id="selectAICardLabel">Select AI Card</h5>
             <select id="aiSearch" style="width: 300px" disabled></select>
             <div class="d-flex">
-                <button type="button" class="btn btn-dark btn-block btn-m m-1" id="addBtn" onclick="add()">
+                <button type="button" class="btn btn-dark btn-block btn-m m-1" id="addBtn" onclick="add()" disabled>
                     Add</button>
                 <button type="button" class="btn btn-dark btn-block btn-m m-1" id="removeBtn" onclick="remove()"
                     disabled>
                     Remove</button>
             </div>
-            <div class="d-flex m-3" id="aiCard"></div>
+            <div class="d-flex flex-wrap" id="aiCard"></div>
         </div>
     </div>
 
