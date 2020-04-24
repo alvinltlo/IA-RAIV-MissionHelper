@@ -9,6 +9,8 @@ body{
 .card{
     border-radius: 8px;
     width: 320px;
+    align-self: center;
+    flex: 0 0 auto;
 }
 
 .selectable img {

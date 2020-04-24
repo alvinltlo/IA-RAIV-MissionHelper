@@ -123,7 +123,7 @@ function updateMissionDropDown() {
     })
 
     missionSearchSelect.disabled = false;
-    selectMissionLabel.innerText = "Select Mission: (Avaliable Missions = " + missions.length + ")";
+    selectMissionLabel.innerText = "Select Mission: (Available Missions = " + missions.length + ")";
 }
 
 function updateAICardDropDown() {
