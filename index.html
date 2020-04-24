@@ -21,17 +21,9 @@
             <button type="button" class="btn btn-dark btn-block btn-m m-1" id="build" onclick="loadAll()">Load
                 all Missions and AI Cards</button>
         </div>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-dark active">
-                <input type="radio" name="enableAttention" id="enableAttentionCard" autocomplete="off"
-                    onchange="enableAttention()">
-                Enable Attention Card
-            </label>
-            <label class="btn btn-dark">
-                <input type="radio" name="disableAttention" id="disableAttentionCard" autocomplete="off" checked
-                    onchange="disableAttention()"> Disabled
-                Attention Card
-            </label>
+        <div class="d-flex">
+            <button type="button" class="btn btn-dark btn-block btn-m m-1" id="attentionBtn"
+                onclick="toogleAttention()">Enable Attention Card</button>
         </div>
     </div>
     <div class="d-flex flex-row justify-content-around m-2 p-2 flex-wrap boarder align-items-center">

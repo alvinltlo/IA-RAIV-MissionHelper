@@ -213,47 +213,56 @@ function getImagePath(mission, front) {
     }
 }
 
-function enableAttention() {
-    let e = document.getElementById("attentionArea");
-    e.classList.add("boarder");
+function toogleAttention() {
+    if (attentionBtn.innerText == "Enable Attention Card") {
+        console.log(attentionBtn.innerText);
+        let e = document.getElementById("attentionArea");
+        e.classList.add("boarder");
 
-    let h5 = document.createElement("h5");
-    h5.innerHTML = "Minimum Hero XP";
-    let select = document.createElement("select");
-    select.classList.add("selectpicker");
-    select.id = "attentionDropDown";
-    select.onchange = function () { addAttentionCard(); };
+        let h5 = document.createElement("h5");
+        h5.innerHTML = "Minimum Hero XP";
+        let select = document.createElement("select");
+        select.classList.add("selectpicker");
+        select.id = "attentionDropDown";
+        select.onchange = function () { addAttentionCard(); };
 
-    let op0 = document.createElement("option");
-    op0.value = "0";
-    op0.textContent = "0";
-    let op1 = document.createElement("option");
-    op1.value = "1";
-    op1.textContent = "1+";
-    let op3 = document.createElement("option");
-    op3.value = "3";
-    op3.textContent = "3+";
-    let op6 = document.createElement("option");
-    op6.value = "6";
-    op6.textContent = "6+";
-    let op10 = document.createElement("option");
-    op10.value = "10";
-    op10.textContent = "10+";
+        let op0 = document.createElement("option");
+        op0.value = "0";
+        op0.textContent = "0";
+        let op1 = document.createElement("option");
+        op1.value = "1";
+        op1.textContent = "1+";
+        let op3 = document.createElement("option");
+        op3.value = "3";
+        op3.textContent = "3+";
+        let op6 = document.createElement("option");
+        op6.value = "6";
+        op6.textContent = "6+";
+        let op10 = document.createElement("option");
+        op10.value = "10";
+        op10.textContent = "10+";
 
-    select.appendChild(op0);
-    select.appendChild(op1);
-    select.appendChild(op3);
-    select.appendChild(op6);
-    select.appendChild(op10);
+        select.appendChild(op0);
+        select.appendChild(op1);
+        select.appendChild(op3);
+        select.appendChild(op6);
+        select.appendChild(op10);
 
-    let div = document.createElement("div");
-    div.classList.add("d-flex", "flex-wrap");
-    div.style.marginTop = "10px"
-    div.id = "attentionCard"
+        let div = document.createElement("div");
+        div.classList.add("d-flex", "flex-wrap");
+        div.style.marginTop = "10px"
+        div.id = "attentionCard"
 
-    attentionArea.appendChild(h5);
-    attentionArea.appendChild(select);
-    attentionArea.appendChild(div);
+        attentionArea.appendChild(h5);
+        attentionArea.appendChild(select);
+        attentionArea.appendChild(div);
+        attentionBtn.innerText = "Disable Attention Card"
+    } else {
+        let e = document.getElementById("attentionArea");
+        e.classList.remove("boarder");
+        attentionArea.innerHTML = '';
+        attentionBtn.innerText = "Enable Attention Card"
+    }
 }
 
 function addAttentionCard() {
