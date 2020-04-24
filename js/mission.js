@@ -247,7 +247,7 @@ function enableAttention() {
     select.appendChild(op10);
 
     let div = document.createElement("div");
-    div.classList.add("d-flex flex-wrap");
+    div.classList.add("d-flex", "flex-wrap");
     div.style.marginTop = "10px"
     div.id = "attentionCard"
 
